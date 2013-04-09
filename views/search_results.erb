@@ -1,0 +1,20 @@
+<!-- <p><%= @results.inspect %></p> -->
+
+<table class="table table-condensed">
+  <tr>
+    <td>Title</td>
+    <td>Year</td>
+    <td>IMDB Id</td>
+    <td>Type</td>
+    <td></td>
+  </tr>
+  <% @results["Search"].each do |item| %>
+  <tr>
+    <td><%= item["Title"] %></td>
+    <td><%= item["Year"] %></td>
+    <td><%= item["imdbID"] %></td>
+    <td><%= item["Type"] %></td>
+    <td><a class="btn" href="/movie_details/<%= item["imdbID"] %>">Details</a></td>
+  </tr>
+  <% end %>
+</table>

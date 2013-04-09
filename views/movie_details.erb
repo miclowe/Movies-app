@@ -1,0 +1,21 @@
+<!-- <p><%= @results.inspect %></p> -->
+  <div class="span12">
+    <div class="row-fluid">
+      <div id="movie-details">
+        <div class="span4">
+          <img src="<%= @results["Poster"] %>" />
+        </div>
+        <div class="span8">
+          <p>Title: <%= @results["Title"] %></p>
+          <p>Year: <%= @results["Year"] %></p>
+          <p>Rating: <%= @results["Rated"] %></p>
+          <p>Runtime: <%= @results["Runtime"] %></p>
+          <p>Genre: <%= @results["Genre"] %></p>
+          <p>Plot: <%= @results["Plot"] %></p>
+          <p>IMDB Rating: <%= @results["imdbRating"] %></p>
+          <p>Directed By: <%= @results["Director"] %></p>
+          <p>Cast: <%= @results["Actors"] %></p>
+        </div>
+      </div>
+    </div>
+  </div>

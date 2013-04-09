@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Flick Search</title>
+ <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap-responsive.min.css">
+  <!-- Google Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+</head>
+
+<body class="home">
+  <div class="navbar">
+    <div class="container">
+      <div class="navbar-inner clearfix">
+        <a class="brand" href="#">
+          <span class="logo-text">FlickSearch</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero container-fluid">
+    <div class="container main">
+      <div class="row-fluid">
+        <div class="span12">
+          <h1>FlickSearch</h1>
+          <h3>Find all of your favorite movies</h3>
+          <form action="/search_results" method="GET">
+            <fieldset>
+              <legend>Search by Title</legend>
+              <input type='text' name='title' />
+              <input type="submit" value="Search" />
+            </fieldset>
+          </form>
+        </div>
+    </div>
+  </div>
+  <div class="footer row-fluid">
+    <div class="span12">
+      <p>Copyright &copy; 2013 FlickSearch</p>
+    </div>
+  </div>
+</body>
+</html>
